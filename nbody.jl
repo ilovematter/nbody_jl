@@ -119,13 +119,15 @@ function create_plot(data::Matrix, file_name::String)
     x = 2
     y = 3
     z = 4
-    new_plot = plot(data[:, x], data[:, y], data[:, z], legend = false)
+    new_plot = plot(data[:, x], data[:, y], data[:, z], legend = false,
+        aspect_ratio = :equal)
 
     for i = 1:((size(data, 2) - 1) / 3) - 1
         x += 3
         y += 3
         z += 3
-        plot!(new_plot, data[:, x], data[:, y], data[:, z], legend = false)
+        plot!(new_plot, data[:, x], data[:, y], data[:, z], legend = false,
+            aspect_ratio = :equal)
     end
 
     savefig(new_plot, file_name * ".svg")
@@ -134,8 +136,8 @@ end
 function main()
     system, t, dt, save_interval = load("input.txt")
     data = integrate(system, t, dt, save_interval)
-    create_plot(data, "plot")
     save(data, "output")
+    create_plot(data, "plot")
 end
 
 main()
