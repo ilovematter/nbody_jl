@@ -3,8 +3,10 @@ This is a simple gravitational n-body simulation routine written in Julia. It us
 
 Example plot outputs:
 
-2-body example
+2-body trajectories
+
 ![2_body_example](https://raw.githubusercontent.com/ilovematter/nbody_jl/f9fa3e6dbd704036233743ce21dbdbd4ecbace09/2_body_example.svg)
 
-3-body example
+3-body trajectories
+
 ![3_body_example](https://raw.githubusercontent.com/ilovematter/nbody_jl/5acf4d2681fd43893df5a9332697c28595f296b7/3_body_example.svg)
