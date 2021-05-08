@@ -1,5 +1,5 @@
 # nbody_jl
-This is a simple gravitational n-body simulation routine written in Julia. It uses Velocity Verlet integration to compute trajectories of n bodies with varying masses m. It outputs the body positions to a csv file (can be opened in almost all text editors or spreadsheet applications) and saves an svg image file of plotted trajectories. Simulations are set up with a simple text configuration file called (an example "input.txt" is provided).
+This is a simple gravitational n-body simulation routine written in Julia. It uses Velocity Verlet integration to compute trajectories of n bodies. It outputs the body positions to a csv file (can be opened in almost all text editors or spreadsheet applications) and saves an svg image file of plotted trajectories. Simulations are set up with a simple text configuration file called (an example "input.txt" is provided).
 
 
 2-body example:
