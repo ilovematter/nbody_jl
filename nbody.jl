@@ -93,7 +93,7 @@ function load(file_name::String)
     return system
 end
 
-function plot(data::Matrix, file_name::String)
+function create_plot(data::Matrix, file_name::String)
     x = 2
     y = 3
     new_plot = plot(data[:, x], data[:, y])
@@ -114,7 +114,7 @@ function main()
     #system = System([p1, p2, p3])
     load("input.txt")
     data = integrate(system, 1.2)
-    plot(data, "output")
+    create_plot(data, "output")
     save(data, "output")
 end
 
