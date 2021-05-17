@@ -1,0 +1,7 @@
+time 15
+step_size 0.0001
+save_interval 0.001
+cutoff_distance 1000.0
+particle 5.0 0.0 8.3 2.5 -1.0 -1.6 5.0
+particle 5.0 0.0 -5.2 -6.0 0.0 1.6 -2.0
+particle 5.0 3.0 3.0 3.0 0.0 0.0 0.0
